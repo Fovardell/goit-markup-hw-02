@@ -1,6 +1,15 @@
+:root {
+	--main-white-color: #ffffff;
+	--brand-color: #4d5ae5;
+	--primary-text-color: #434455;
+	--title-text-color: #2e2f42;
+	--accent-color: #f4f4fd;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
-	color: #434455;
+	color: var(--primary-text-color);
+	background-color: var(--main-white-color);
 }
 a {
 	color: inherit;
@@ -15,11 +24,8 @@ li {
 }
 
 /* ======================header================================== */
-.header {
-	background-color: #ffffff;
-}
 .logo {
-	color: #4d5ae5;
+	color: var(--brand-color);
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
@@ -28,10 +34,10 @@ li {
 	letter-spacing: 0.03em;
 }
 .logo-accent {
-	color: #2e2f42;
+	color: var(--title-text-color);
 }
 .nav-list {
-	color: #2e2f42;
+	color: var(--title-text-color);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -39,7 +45,6 @@ li {
 }
 .contacts {
 	font-style: normal;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -47,10 +52,10 @@ li {
 /* ======================/header================================== */
 /* ================================main=============================== */
 .hero {
-	background-color: #2e2f42;
+	background-color: var(--title-text-color);
 }
 .title-hero {
-	color: #ffffff;
+	color: var(--main-white-color);
 
 	font-weight: 700;
 	font-size: 56px;
@@ -59,19 +64,13 @@ li {
 	letter-spacing: 0.02em;
 }
 .button-hero {
-	color: #ffffff;
-	background: #4d5ae5;
+	color: var(--main-white-color);
+	background: var(--brand-color);
 
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
-}
-.features {
-	background-color: #ffffff;
-}
-.features h2 {
-	display: none;
 }
 .section-title {
 	font-weight: 700;
@@ -82,7 +81,7 @@ li {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 
-	color: #2e2f42;
+	color: var(--title-text-color);
 }
 .heading {
 	font-weight: 500;
@@ -91,30 +90,40 @@ li {
 
 	letter-spacing: 0.02em;
 
-	color: #2e2f42;
+	color: var(--title-text-color);
 }
 .text {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
-.work {
-	background-color: #ffffff;
-}
 .team {
-	background-color: #f4f4fd;
-}
-.team-item {
-	background-color: #ffffff;
+	background-color: var(--accent-color);
 }
 /* ================================/main=============================== */
+/* ======================================portfolio============================ */
+.button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
 
+	color: var(--brand-color);
+	background-color: var(--accent-color);
+}
+.items {
+}
+.item {
+}
+.item-img {
+}
+/* ======================================.portfolio============================ */
 /* =====================================footer=============================== */
 .footer {
-	background-color: #2e2f42;
+	background-color: var(--title-text-color);
 }
 .footer .logo-accent,
 .footer > .text {
-	color: #f4f4fd;
+	color: var(--accent-color);
 }
 /* =====================================/footer=============================== */
