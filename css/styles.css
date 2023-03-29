@@ -1,15 +1,16 @@
 :root {
-	--main-white-color: #ffffff;
-	--brand-color: #4d5ae5;
-	--primary-text-color: #434455;
-	--title-text-color: #2e2f42;
-	--accent-color: #f4f4fd;
+	--white-background: #ffffff;
+	--primary-brand: #4d5ae5;
+	--text: #434455;
+	--dark: #2e2f42;
+	--light: #f4f4fd;
+	--pressed-state: #404bbf;
 }
 
 body {
 	font-family: "Roboto", sans-serif;
-	color: var(--primary-text-color);
-	background-color: var(--main-white-color);
+	color: var(--text);
+	background-color: var(--white-background);
 }
 a {
 	color: inherit;
@@ -25,7 +26,7 @@ li {
 
 /* ======================header================================== */
 .logo {
-	color: var(--brand-color);
+	color: var(--primary-brand);
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
@@ -34,14 +35,21 @@ li {
 	letter-spacing: 0.03em;
 }
 .logo-accent {
-	color: var(--title-text-color);
+	color: var(--dark);
 }
 .nav-list {
-	color: var(--title-text-color);
+	color: var(--dark);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+}
+.nav-list:hover,
+.nav-list:focus {
+	color: var(--pressed-state);
+}
+.active {
+	color: var(--pressed-state);
 }
 .contacts {
 	font-style: normal;
@@ -49,13 +57,19 @@ li {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
+.contacts > a:hover,
+.contacts > a:focus{
+	color: var(--pressed-state);
+}
+
+
 /* ======================/header================================== */
 /* ================================main=============================== */
 .hero {
-	background-color: var(--title-text-color);
+	background-color: var(--dark);
 }
 .title-hero {
-	color: var(--main-white-color);
+	color: var(--white-background);
 
 	font-weight: 700;
 	font-size: 56px;
@@ -64,13 +78,17 @@ li {
 	letter-spacing: 0.02em;
 }
 .button-hero {
-	color: var(--main-white-color);
-	background: var(--brand-color);
+	color: var(--white-background);
+	background: var(--primary-brand);
 
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
+}
+.button-hero:hover,
+.button-hero:focus {
+	background-color: var(--pressed-state);
 }
 .section-title {
 	font-weight: 700;
@@ -81,7 +99,7 @@ li {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 
-	color: var(--title-text-color);
+	color: var(--dark);
 }
 .heading {
 	font-weight: 500;
@@ -90,7 +108,7 @@ li {
 
 	letter-spacing: 0.02em;
 
-	color: var(--title-text-color);
+	color: var(--dark);
 }
 .text {
 	font-size: 16px;
@@ -98,7 +116,7 @@ li {
 	letter-spacing: 0.02em;
 }
 .team {
-	background-color: var(--accent-color);
+	background-color: var(--light);
 }
 /* ================================/main=============================== */
 /* ======================================portfolio============================ */
@@ -108,8 +126,13 @@ li {
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 
-	color: var(--brand-color);
-	background-color: var(--accent-color);
+	color: var(--primary-brand);
+	background-color: var(--light);
+}
+.button:hover,
+.button:focus {
+	background-color: var(--pressed-state);
+	color: var(--white-background);
 }
 .items {
 }
@@ -120,10 +143,10 @@ li {
 /* ======================================.portfolio============================ */
 /* =====================================footer=============================== */
 .footer {
-	background-color: var(--title-text-color);
+	background-color: var(--dark);
 }
 .footer .logo-accent,
 .footer > .text {
-	color: var(--accent-color);
+	color: var(--light);
 }
 /* =====================================/footer=============================== */
