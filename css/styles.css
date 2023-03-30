@@ -26,6 +26,9 @@ li {
 
 /* ======================header================================== */
 .link {
+	text-decoration: none;
+}
+.link-styles {
 	color: var(--primary-brand);
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
@@ -33,7 +36,6 @@ li {
 	line-height: 1.17;
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
-	text-decoration: none;
 }
 .logo-accent {
 	color: var(--dark);
@@ -63,11 +65,10 @@ li {
 	list-style: none;
 	text-decoration: none;
 }
-.list > a:hover,
-.list > a:focus {
+.interactive a:hover,
+.interactive a:focus {
 	color: var(--pressed-state);
 }
-
 /* ======================/header================================== */
 /* ================================main=============================== */
 .hero {
@@ -145,12 +146,6 @@ li {
 .button:focus {
 	background-color: var(--pressed-state);
 	color: var(--white-background);
-}
-.items {
-}
-.item {
-}
-.item-img {
 }
 /* ======================================.portfolio============================ */
 /* =====================================footer=============================== */
