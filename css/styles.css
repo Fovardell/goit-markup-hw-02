@@ -25,7 +25,7 @@ li {
 }
 
 /* ======================header================================== */
-.logo {
+.link {
 	color: var(--primary-brand);
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
@@ -33,32 +33,38 @@ li {
 	line-height: 1.17;
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
+	text-decoration: none;
 }
 .logo-accent {
 	color: var(--dark);
 }
-.nav-list {
+.list {
 	color: var(--dark);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
-.nav-list:hover,
-.nav-list:focus {
+.list a:hover,
+.list a:focus {
 	color: var(--pressed-state);
 }
 .active {
 	color: var(--pressed-state);
 }
-.contacts {
+.address {
+	list-style: none;
 	font-style: normal;
+}
+.list {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	list-style: none;
+	text-decoration: none;
 }
-.contacts > a:hover,
-.contacts > a:focus {
+.list > a:hover,
+.list > a:focus {
 	color: var(--pressed-state);
 }
 
