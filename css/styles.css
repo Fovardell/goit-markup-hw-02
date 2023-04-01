@@ -27,6 +27,7 @@ li {
 /* ======================header================================== */
 .link {
 	text-decoration: none;
+	color: var(--dark:);
 }
 .link-styles {
 	color: var(--primary-brand);
