@@ -12,10 +12,6 @@ body {
 	color: var(--text);
 	background-color: var(--white-background);
 }
-a {
-	color: inherit;
-	text-decoration: none;
-}
 button {
 	cursor: pointer;
 	font-family: inherit;
@@ -27,7 +23,6 @@ li {
 /* ======================header================================== */
 .link {
 	text-decoration: none;
-	color: var(--dark);
 }
 .link-styles {
 	color: var(--primary-brand);
@@ -38,11 +33,14 @@ li {
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
 }
+.list a{
+		color: var(--dark);
+}
 .logo-accent {
 	color: var(--dark);
 }
 .list {
-	color: var(--dark);
+	color: --text;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -52,7 +50,7 @@ li {
 .list a:focus {
 	color: var(--pressed-state);
 }
-.active {
+.list .active {
 	color: var(--pressed-state);
 }
 .address {
