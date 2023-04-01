@@ -33,12 +33,16 @@ li {
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
 }
-.list a{
-		color: var(--dark);
+.list a {
+	color: var(--dark);
 }
 .logo-accent {
 	color: var(--dark);
 }
+address .link {
+	color: var(--text);
+}
+
 .list {
 	color: --text;
 	font-weight: 500;
