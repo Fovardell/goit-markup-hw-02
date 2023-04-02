@@ -84,6 +84,7 @@ address .link {
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
+	text-align: center;
 }
 .button-hero {
 	color: var(--white-background);
@@ -108,7 +109,7 @@ address .link {
 
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
-
+	text-align: center;
 	color: var(--dark);
 }
 .heading {
