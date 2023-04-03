@@ -12,15 +12,11 @@ body {
 	color: var(--text);
 	background-color: var(--white-background);
 }
-button {
+/* ======================header================================== */
+.btn {
 	cursor: pointer;
 	font-family: inherit;
 }
-li {
-	list-style: none;
-}
-
-/* ======================header================================== */
 .link {
 	text-decoration: none;
 }
@@ -44,8 +40,8 @@ address .link {
 }
 
 .list {
+	list-style: none;
 	color: --text;
-	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -62,11 +58,13 @@ address .link {
 	font-style: normal;
 }
 .list {
+	text-decoration: none;
+}
+.list-styles {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	list-style: none;
-	text-decoration: none;
 }
 .interactive a:hover,
 .interactive a:focus {
@@ -77,10 +75,12 @@ address .link {
 .hero {
 	background-color: var(--dark);
 }
+.thickness {
+	font-weight: 500;
+}
 .title-hero {
 	color: var(--white-background);
 
-	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
@@ -90,10 +90,10 @@ address .link {
 	color: var(--white-background);
 	background: var(--primary-brand);
 
-	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
+	font-weight: 500;
 
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
@@ -103,7 +103,6 @@ address .link {
 	background-color: var(--pressed-state);
 }
 .section-title {
-	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.11;
 
@@ -113,7 +112,6 @@ address .link {
 	color: var(--dark);
 }
 .heading {
-	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 
@@ -136,7 +134,6 @@ address .link {
 /* ================================/main=============================== */
 /* ======================================portfolio============================ */
 .button {
-	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
